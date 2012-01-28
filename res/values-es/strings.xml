@@ -269,10 +269,6 @@
     <string name="pref_lockscreen_always_battery_summary">Mostrar el estado de batería en la pantalla de bloqueo en cualquier momento</string>
     <string name="pref_lockscreen_widgets_layout_title">Comportamiento de widgets</string>
     <string name="pref_lockscreen_widgets_layout_summary">Ajustar comportamiento del reloj, fecha, operador ó estatus</string>
-    <string name="pref_lockscreen_widget_layout_entry_default">Izquierda</string>
-    <string name="pref_lockscreen_widget_layout_entry_hidden">Oculto</string>
-    <string name="pref_lockscreen_widget_layout_entry_centered">Centrado</string>
-    <string name="pref_lockscreen_widget_layout_entry_right">Derecha</string>
     <string name="pref_lockscreen_music_controls_title">Controles de música del protector de pantalla</string>
     <string name="pref_lockscreen_music_controls_summary">Muestra los controles de música en el protector de pantalla</string>
     <string name="pref_lockscreen_now_playing_title">Mostrar el nombre de la canción</string>
@@ -656,8 +652,6 @@
     <string name="sound_camera_shutter_disable_summary_off">El sonido del obturador será reproducido</string>
     <string name="sound_camera_shutter_disable_warning_title">AVISO: ¡Esto podría ser ilegal!</string>
     <string name="sound_camera_shutter_disable_warning">Deshabilitar el sonido de la cámara es ilegal en algunas zonas. ¿Seguro que quieres deshabilitarlo?</string>
-    <string name="sound_lock_volume_keys_title">Bloquear botones Volumen</string>
-    <string name="sound_lock_volume_keys_summary">Previene un uso accidental del volumen cuando el terminal está en modo silencio</string>
     <string name="sound_to_speaker_title">Reproducir siempre en el altavoz</string>
     <string name="sound_notifications_title">Notificaciones</string>
     <string name="sound_rings_title">Tonos de llamada</string>

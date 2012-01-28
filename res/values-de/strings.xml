@@ -269,10 +269,6 @@
     <string name="pref_lockscreen_always_battery_summary">Den Batteriestatus immer auf dem Sperrbildschirm anzeigen</string>
     <string name="pref_lockscreen_widgets_layout_title">Widget-Layout</string>
     <string name="pref_lockscreen_widgets_layout_summary">Layout für Uhrzeit, Datum, Netzbetreiber und Status wählen</string>
-    <string name="pref_lockscreen_widget_layout_entry_default">Standard</string>
-    <string name="pref_lockscreen_widget_layout_entry_hidden">Versteckt</string>
-    <string name="pref_lockscreen_widget_layout_entry_centered">Zentriert</string>
-    <string name="pref_lockscreen_widget_layout_entry_right">Rechtsbündig</string>
     <string name="pref_lockscreen_music_controls_title">Musiksteuerung</string>
     <string name="pref_lockscreen_music_controls_summary">Steuerelemente für Musik auf Sperrbildschirm anzeigen</string>
     <string name="pref_lockscreen_now_playing_title">Titel anzeigen</string>
@@ -651,8 +647,6 @@
     <string name="sound_vibrate_in_call_title">Im Gespräch vibrieren</string>
     <string name="sound_vibrate_in_call_summary_on">Normale Vibration bei Benachrichtigungen während eines Gesprächs</string>
     <string name="sound_vibrate_in_call_summary_off">Keine Vibration bei Benachrichtigungen während eines Gesprächs</string>
-    <string name="sound_lock_volume_keys_title">Lautstärketasten sperren</string>
-    <string name="sound_lock_volume_keys_summary">Lautstärketasten im Lautlosmodus sperren; verhindert versehentliches Deaktivieren des Lautlosmodus</string>
     <string name="sound_camera_shutter_disable_title">Auslöseton deakt.</string>
     <string name="sound_camera_shutter_disable_summary_on">Kamera-Auslöseton wird nicht abgespielt</string>
     <string name="sound_camera_shutter_disable_summary_off">Kamera-Auslöseton wird abgespielt</string>

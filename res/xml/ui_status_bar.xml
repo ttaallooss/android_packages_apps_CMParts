@@ -7,6 +7,13 @@
 			android:title="@string/ui_status_bar_clock_title"
 			android:summary="@string/ui_status_bar_clock_summary"
 			android:defaultValue="true" />
+		<CheckBoxPreference android:key="pref_status_bar_centerclock"
+			android:title="@string/ui_status_bar_centerclock_title"
+			android:summary="@string/ui_status_bar_centerclock_summary"
+			android:defaultValue="ffffff00" />
+                <Preference android:key="pref_status_bar_clockcolor"
+                        android:title="@string/ui_status_bar_clockcolor_title"
+                        android:summary="@string/ui_status_bar_clockcolor_summary" />
 		<ListPreference android:key="pref_status_bar_am_pm"
 			android:dialogTitle="@string/ui_status_bar_am_pm_title"
 			android:title="@string/ui_status_bar_am_pm_title"
@@ -48,6 +55,12 @@
 			android:title="@string/ui_status_bar_headset_title"
 			android:summary="@string/ui_status_bar_headset_summary"
 			android:defaultValue="true" />
+		<ListPreference android:key="pref_transparent_status_bar" 
+			android:dialogTitle="@string/pref_transparent_status_bar_title"
+        		android:title="@string/pref_transparent_status_bar_title" 
+			android:summary="@string/pref_transparent_status_bar_summary"
+        		android:entries="@array/entries_transparent_status_bar" 
+			android:entryValues="@array/values_transparent_status_bar" />
 	</PreferenceCategory>
 
 </PreferenceScreen>

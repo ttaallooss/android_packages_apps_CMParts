@@ -37,6 +37,10 @@
             android:title="@string/pref_disable_bootanimation_title"
             android:summary="@string/pref_disable_bootanimation_summary" />
 
+	<CheckBoxPreference android:key="pref_disable_bootsound"
+            android:title="@string/pref_disable_bootsound_title"
+            android:summary="@string/pref_disable_bootsound_summary" />
+
         <CheckBoxPreference android:key="pref_lock_home"
             android:title="@string/pref_lock_home_title"
             android:summary="@string/pref_lock_home_summary" />

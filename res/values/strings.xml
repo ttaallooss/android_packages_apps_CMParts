@@ -96,6 +96,10 @@
     <string name="ui_status_bar_am_pm_summary">Display style of AM/PM next to clock</string>
     <string name="ui_status_bar_clock_title">Show clock</string>
     <string name="ui_status_bar_clock_summary">Status bar clock will be hidden, if disabled</string>
+    <string name="ui_status_bar_centerclock_title">Center clock</string>
+    <string name="ui_status_bar_centerclock_summary">Clock will be centered if checked. Uncheck to move to the right.</string>
+    <string name="ui_status_bar_clockcolor_title">Clock color</string>
+    <string name="ui_status_bar_clockcolor_summary">ffffffff</string>
     <string name="ui_status_bar_battery_title">Battery status style</string>
     <string name="ui_status_bar_battery_summary">Display style of battery status</string>
     <string name="ui_status_bar_compact_carrier_title">Compact carrier label</string>
@@ -118,6 +122,8 @@
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signal text w/dBm</string>
     <string name="ui_status_bar_headset_title">Show headset icon</string>
     <string name="ui_status_bar_headset_summary">Headset icon will appear when headset is plugged in</string>
+    <string name="pref_transparent_status_bar_title">Status bar transparency</string>
+    <string name="pref_transparent_status_bar_summary">Reboot to apply changes</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED notifications</string>
@@ -160,6 +166,15 @@
     <!-- Color Picker -->
     <string name="title_color_picker">Pick a color</string>
     <string name="msg_color_picker">Tap on center color to confirm.\nPress back to cancel</string>
+
+    <!-- User interface: Boot animation -->
+    <string name="ui_bootanim_cat_title">Boot animation</string>
+    <string name="bootanimation_title">Choose</string>
+    <string name="bootanimation_summary">Choose a custom boot animation from your sd card</string>
+    <string name="bootanimation_preview_title">Preview</string>
+    <string name="bootanimation_preview_summary">Preview boot animation</string>
+    <string name="bootanimation_reset_title">Restore</string>
+    <string name="bootanimation_reset_summary">Restore to default boot animation</string>
 
     <!-- User interface: LED notifications -->
     <string name="group_settings">Settings</string>
@@ -341,6 +356,7 @@
     <string name="ringlock_style_entry_bubbles">Bubble style</string>
     <string name="ringlock_style_entry_revamped">Revamped style</string>
     <string name="ringlock_style_entry_holo">Holo style</string>
+    <string name="ringlock_style_entry_blade">Blade style</string>
     <string name="pref_in_call_style_title">Incoming call style</string>
     <string name="pref_in_call_style_summary">Choose the style of the incoming calls accept/reject widget</string>
     <string name="incall_style_entry_tabs">Sliding Tab</string>
@@ -476,6 +492,10 @@
     <string name="pref_disable_bootanimation_title">Disable boot animation</string>
     <string name="pref_disable_bootanimation_summary">Don\'t show the boot animation for faster boot</string>
 
+    <!-- Performance : Disable bootsound -->
+    <string name="pref_disable_bootsound_title">Enable boot sound</string>
+    <string name="pref_disable_bootsound_summary">play the boot sound</string>
+
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Lock home in memory</string>
     <string name="pref_lock_home_summary">Attempt to keep the current home app in memory at all times</string>
@@ -603,6 +623,8 @@
     <string name="cm_sound_mode_soundVibrate">Sound+Vibrate</string>
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
+    <string name="pref_mobiledatanetwork_mode_title">Mobiledata auto 2G/3G</string>
+    <string name="pref_mobiledatanetwork_mode_summary">Mobiledata button toggles 2G/3G mode</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Automatic backlight</string>
@@ -654,9 +676,15 @@
     <string name="sound_vibrate_in_call_summary_on">Notifications will vibrate normally</string>
     <string name="sound_lock_volume_keys_title">Lock volume keys</string>
     <string name="sound_lock_volume_keys_summary">Prevents accidental unset of silent mode by pressing volume keys</string>
+    <string name="sound_volume_key_beeps_title">Volume key beeps</string>
+    <string name="sound_volume_key_beeps_summary_off">Do not beep after changing the ringer volume using the volume keys</string>
+    <string name="sound_volume_key_beeps_summary_on">Beep after changing the ringer volume using the volume keys</string>
     <string name="sound_camera_shutter_disable_title">Mute camera shutter</string>
     <string name="sound_camera_shutter_disable_summary_on">Shutter sound will not be played</string>
     <string name="sound_camera_shutter_disable_summary_off">Shutter sound will be played</string>
+    <string name="sound_camera_focus_mute_title">Mute camera focus</string>
+    <string name="sound_camera_focus_mute_summary_on">Focus sound will not be played</string>
+    <string name="sound_camera_focus_mute_summary_off">Focus sound will be played</string>
     <string name="sound_camera_shutter_disable_warning_title">WARNING: This may be illegal!</string>
     <string name="sound_camera_shutter_disable_warning">Disabling camera shutter sound is illegal in some areas. Are you sure you want to disable it?</string>
     <string name="sound_to_speaker_title">Always play on speaker</string>
