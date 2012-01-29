@@ -59,6 +59,8 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
 
     private static final String VOLUME_KEY_BEEPS = "volume-key-beeps";
 
+    private static final String RINGER_LOOP_PREF = "pref_ringer_loop";
+
     private static final String RINGS_SPEAKER = "ring-speaker";
 
     private static final String RINGS_ATTENUATION = "ring-attn";
@@ -79,6 +81,8 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
 
     private static final String CAMERA_CATEGORY = "camera_category";
     private static final String CAMERA_SHUTTER_DISABLE = "ro.camera.sound.disabled";
+
+    private CheckBoxPreference mRingerLoop;
 
     private static String getKey(String suffix) {
         return PREFIX + suffix;
@@ -121,6 +125,9 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
         p.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.VOLUME_KEY_BEEPS, 1) != 0);
         p.setOnPreferenceChangeListener(this);
+
+	mRingerLoop = (CheckBoxPreference) prefSet.findPreference(RINGER_LOOP_PREF);
+        mRingerLoop.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.RINGER_LOOP, 1) == 1));
 
         p = (CheckBoxPreference) prefSet.findPreference(RINGS_SPEAKER);
         p.setChecked(SystemProperties.getBoolean(getKey(RINGS_SPEAKER), false));
@@ -191,6 +198,8 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
 	} else if (key.equals(VOLUME_KEY_BEEPS)) {
             Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_KEY_BEEPS,
                     getBoolean(newValue) ? 1 : 0);
+        } else if (preference == mRingerLoop) {
+            Settings.System.putInt(getContentResolver(), Settings.System.RINGER_LOOP, mRingerLoop.isChecked() ? 1 : 0);
         } else if (key.equals(NOTIFICATIONS_SPEAKER) || key.equals(RINGS_SPEAKER)
                 || key.equals(ALARMS_SPEAKER)) {
             SystemProperties.set(getKey(key), getBoolean(newValue) ? "1" : "0");

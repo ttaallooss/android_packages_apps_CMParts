@@ -37,6 +37,10 @@
 			android:summaryOff="@string/sound_volume_key_beeps_summary_off"
 			android:persistent="false" />
 
+	<!--  Ringtone looping -->
+		<CheckBoxPreference android:key="pref_ringer_loop"
+        		android:title="@string/pref_ringer_loop_title" android:summary="@string/pref_ringer_loop_summary"/>
+
 		<PreferenceScreen android:key="sound_category_quiet_hours"
 			android:title="@string/sound_category_quiet_hours_title">
 			<intent android:action="android.intent.action.MAIN"
