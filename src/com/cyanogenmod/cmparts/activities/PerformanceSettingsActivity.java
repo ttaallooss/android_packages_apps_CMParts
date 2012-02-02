@@ -77,7 +77,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 	
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
 	
-    private static final String SCROLLINGCACHE_DEFAULT = "1";
+    private static final String SCROLLINGCACHE_DEFAULT = "2";
 
     private static final String PURGEABLE_ASSETS_PREF = "pref_purgeable_assets";
 

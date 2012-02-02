@@ -74,10 +74,11 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
         /* Preference Screens */
         mBacklightScreen = (PreferenceScreen) prefSet.findPreference(BACKLIGHT_SETTINGS);
         // No reason to show backlight if no light sensor on device
-        if (((SensorManager) getSystemService(SENSOR_SERVICE)).getDefaultSensor(Sensor.TYPE_LIGHT) == null) {
-            ((PreferenceCategory) prefSet.findPreference(GENERAL_CATEGORY))
-                    .removePreference(mBacklightScreen);
-        }
+        //if (((SensorManager) getSystemService(SENSOR_SERVICE)).getDefaultSensor(Sensor.TYPE_LIGHT) == null) {
+        //    ((PreferenceCategory) prefSet.findPreference(GENERAL_CATEGORY))
+        //            .removePreference(mBacklightScreen);
+        //}
+        // try to activated backlight control
 
         /* Electron Beam control */
         mElectronBeamAnimationOn = (CheckBoxPreference)prefSet.findPreference(ELECTRON_BEAM_ANIMATION_ON);
