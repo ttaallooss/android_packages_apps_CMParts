@@ -13,6 +13,14 @@
                 android:targetClass="com.cyanogenmod.stats.MainActivity" />
         </PreferenceScreen>
 
+        <!-- Dev Tools -->
+        <PreferenceScreen android:key="devtools_settings"
+            android:title="@string/devtools_title" android:summary="@string/devtools_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.development"
+                android:targetClass="com.android.development.MainActivity" />
+        </PreferenceScreen>
+
         <!-- Update Notifications -->
         <PreferenceScreen android:key="updatenotify_settings"
             android:title="@string/updatenotify_title" android:summary="@string/updatenotify_summary">
@@ -27,6 +35,14 @@
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.cyanogenmod.cmparts"
                 android:targetClass="com.cyanogenmod.cmparts.activities.ChangeLog" />
+        </PreferenceScreen>
+
+        <!-- Bug Report -->
+        <PreferenceScreen android:key="bugreports_settings"
+            android:title="@string/bugreports_title" android:summary="@string/bugreports_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.bugreportsender"
+                android:targetClass="com.android.bugreportsender.MainActivity" />
         </PreferenceScreen>
 
     </PreferenceCategory>

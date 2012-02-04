@@ -11,6 +11,14 @@
                 android:targetClass="com.cyanogenmod.cmparts.activities.CPUActivity" />
         </PreferenceScreen>
 
+        <!-- Spare Parts -->
+        <PreferenceScreen android:key="spareparts_settings"
+            android:title="@string/spareparts_title" android:summary="@string/spareparts_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.spare_parts"
+                android:targetClass="com.android.spare_parts.MainActivity" />
+        </PreferenceScreen>
+
         <ListPreference android:key="pref_compcache_size"
             android:dialogTitle="@string/pref_compcache_title"
             android:title="@string/pref_compcache_title"
