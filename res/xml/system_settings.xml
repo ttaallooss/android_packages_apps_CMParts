@@ -45,6 +45,15 @@
                 android:targetClass="com.android.bugreportsender.MainActivity" />
         </PreferenceScreen>
 
+        <!-- SIM toolkit -->
+        <PreferenceScreen android:key="stk_settings"
+            android:title="@string/stk_title" android:summary="@string/stk_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.stk"
+                android:targetClass="com.android.stk.MainActivity" />
+        </PreferenceScreen>
+
+
     </PreferenceCategory>
 
 </PreferenceScreen>

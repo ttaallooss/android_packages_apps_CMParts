@@ -750,6 +750,8 @@
     <string name="bugreports_summary">Send Bug report to Developer rom</string>
     <string name="dspmanager_title">DSP Manager</string>
     <string name="dspmanager_summary">Device audio settings</string>
+    <string name="stk_title">SIM toolkit</string>
+    <string name="stk_summary">SIM menu option</string>
 
     <string name="user_defined_key1">Quick Key 1</string>
     <string name="user_defined_key2">Quick Key 2</string>
