@@ -18,7 +18,7 @@
             android:title="@string/devtools_title" android:summary="@string/devtools_summary">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.development"
-                android:targetClass="com.android.development.MainActivity" />
+                android:targetClass="com.android.development.Development" />
         </PreferenceScreen>
 
         <!-- Update Notifications -->
@@ -42,15 +42,15 @@
             android:title="@string/bugreports_title" android:summary="@string/bugreports_summary">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.bugreportsender"
-                android:targetClass="com.android.bugreportsender.MainActivity" />
+                android:targetClass="com.android.bugreportsender.BugReportListActivity" />
         </PreferenceScreen>
 
         <!-- SIM toolkit -->
         <PreferenceScreen android:key="stk_settings"
             android:title="@string/stk_title" android:summary="@string/stk_summary">
             <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.stk"
-                android:targetClass="com.android.stk.MainActivity" />
+                android:targetPackage="com.android.stk" 
+                android:targetClass="com.android.stk.StkMenuActivity" />
         </PreferenceScreen>
 
 
