@@ -82,6 +82,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
 
     private static final String OVERSCROLL_WEIGHT_PREF = "pref_overscroll_weight";
 
+    private static final String OVERSCROLL_COLOR = "pref_overscroll_color";
+
     private CheckBoxPreference mPinchReflowPref;
 
     private CheckBoxPreference mPowerPromptPref;
@@ -91,6 +93,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
     private CheckBoxPreference mShareScreenshotPref;
 
     private ListPreference mOverscrollPref;
+
+    private ListPreference mOverscrollColor;
 
     private ListPreference mOverscrollWeightPref;
 
@@ -166,6 +170,12 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
         mOverscrollPref.setValue(String.valueOf(overscrollEffect));
         mOverscrollPref.setOnPreferenceChangeListener(this);
 
+        mOverscrollColor = (ListPreference) prefSet.findPreference(OVERSCROLL_COLOR);
+        mOverscrollColor.setOnPreferenceChangeListener(this);
+        int overscrollColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.OVERSCROLL_COLOR,0);
+        mOverscrollColor.setValue(String.valueOf(overscrollColor == 0 ? 0 : 1));
+
         mOverscrollWeightPref = (ListPreference) prefSet.findPreference(OVERSCROLL_WEIGHT_PREF);
         int overscrollWeight = Settings.System.getInt(getContentResolver(),
                 Settings.System.OVERSCROLL_WEIGHT, 5);
@@ -226,6 +236,7 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        String val = newValue.toString();
         if (preference == mRenderEffectPref) {
             writeRenderEffect(Integer.valueOf((String) newValue));
             return true;
@@ -239,9 +250,30 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
             Settings.System.putInt(getContentResolver(), Settings.System.OVERSCROLL_WEIGHT,
                     overscrollWeight);
             return true;
+        } else if (preference == mOverscrollColor){
+            if (mOverscrollColor.findIndexOfValue(val)==0){
+                Settings.System.putInt(getContentResolver(), Settings.System.OVERSCROLL_COLOR,0);
+            }else{
+                int overscrollColor = Settings.System.getInt(getContentResolver(),
+                        Settings.System.OVERSCROLL_COLOR,0);
+                ColorPickerDialog cp = new ColorPickerDialog(this,mPackageColorListener,
+                        overscrollColor);
+                cp.show();
+            }
+            return true;
         }
         return false;
     }
+
+    ColorPickerDialog.OnColorChangedListener mPackageColorListener = new
+    ColorPickerDialog.OnColorChangedListener() {
+        public void colorChanged(int color) {
+            Settings.System.putInt(getContentResolver(), Settings.System.OVERSCROLL_COLOR,color);
+        }
+        @Override
+        public void colorUpdate(int color) {
+        }
+    };
 
     // Taken from DevelopmentSettings
     private void updateFlingerOptions() {

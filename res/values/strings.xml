@@ -124,8 +124,14 @@
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signal text w/dBm</string>
     <string name="ui_status_bar_headset_title">Show headset icon</string>
     <string name="ui_status_bar_headset_summary">Headset icon will appear when headset is plugged in</string>
-    <string name="pref_transparent_status_bar_title">Status bar transparency</string>
+    <string name="ui_status_bar_color_title">Status bar background color</string>
+    <string name="ui_status_bar_color_summary">Reboot to apply changes</string>
+    <string name="pref_transparent_status_bar_title">Status bar background appearance</string>
     <string name="pref_transparent_status_bar_summary">Reboot to apply changes</string>
+    <string name="ui_notification_background_color_title">Notification dropdown background color</string>
+    <string name="ui_notification_background_color_summary">Reboot to apply changes</string>
+    <string name="pref_transparent_notification_background_title">Notification dropdown background appearance</string>
+    <string name="pref_transparent_notification_background_summary">Reboot to apply changes</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED notifications</string>
@@ -145,6 +151,8 @@
     <string name="pref_overscroll_summary">Choose how scrollable objects look when they overshoot</string>
     <string name="pref_overscroll_weight_title">Overscrolling weight</string>
     <string name="pref_overscroll_weight_summary">Select the weight of the scrollable objects</string>
+    <string name="pref_overscroll_color_title">Overscroll color</string>
+    <string name="pref_overscroll_color_summary">Select the color of the overscroll</string>
 
     <!-- User interface : Lock Screen -->
     <string name="pref_lockscreen_delay_title">Delay</string>

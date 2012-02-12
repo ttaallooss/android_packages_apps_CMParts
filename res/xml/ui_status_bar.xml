@@ -67,6 +67,20 @@
 			android:summary="@string/pref_transparent_status_bar_summary"
         		android:entries="@array/entries_transparent_status_bar" 
 			android:entryValues="@array/values_transparent_status_bar" />
+                <Preference android:key="pref_status_bar_color"
+                        android:dialogTitle="@string/ui_status_bar_color_title"
+                        android:title="@string/ui_status_bar_color_title"
+                        android:summary="@string/ui_status_bar_color_summary"/>
+                <ListPreference android:key="pref_transparent_notification_background"
+                        android:dialogTitle="@string/pref_transparent_notification_background_title"
+                        android:title="@string/pref_transparent_notification_background_title"
+                        android:summary="@string/pref_transparent_notification_background_summary"
+                        android:entries="@array/entries_transparent_notification_background"
+                        android:entryValues="@array/values_transparent_notification_background" />
+                <Preference android:key="pref_notification_background_color"
+                        android:dialogTitle="@string/ui_notification_background_color_title"
+                        android:title="@string/ui_notification_background_color_title"
+                        android:summary="@string/ui_notification_background_color_summary"/>
 	</PreferenceCategory>
 
 </PreferenceScreen>
