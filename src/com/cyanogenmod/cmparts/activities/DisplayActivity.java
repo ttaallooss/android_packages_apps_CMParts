@@ -105,10 +105,9 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
                 .removePreference(mElectronBeamAnimationOff);
         }
 
-        /* ICS Rotation animation */
+        /* Rotation animation */
         mRotationAnimationPref = (CheckBoxPreference) prefSet.findPreference(ROTATION_ANIMATION_PREF);
-        String userotanim = SystemProperties.get(ROTATION_ANIMATION_PROP, "0");
-        mRotationAnimationPref.setChecked("true".equals(userotanim));
+        mRotationAnimationPref.setChecked(SystemProperties.getBoolean(ROTATION_ANIMATION_PROP, true));
 
         /* Rotation */
         mRotation0Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_0_PREF);
@@ -145,7 +144,7 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
 
         if (preference == mRotationAnimationPref) {
             SystemProperties.set(ROTATION_ANIMATION_PROP,
-                    mRotationAnimationPref.isChecked() ? "true" : "false");
+                    mRotationAnimationPref.isChecked() ? "1" : "0");
             return true;
         }
 
