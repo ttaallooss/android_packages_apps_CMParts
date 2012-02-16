@@ -127,7 +127,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private CheckBoxPreference mDisableBootanimPref;
 
-    private CheckBoxPreference mEnableBootsoundPref;
+    private CheckBoxPreference mEnableBootSoundPref;
 
     private CheckBoxPreference mLockHomePref;
 
@@ -194,7 +194,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         String disableBootanimation = SystemProperties.get(DISABLE_BOOTANIMATION_PERSIST_PROP, DISABLE_BOOTANIMATION_DEFAULT);
         mDisableBootanimPref.setChecked("1".equals(disableBootanimation));
 
-	mEnableBootsoundPref = (CheckBoxPreference) prefSet.findPreference(ENABLE_BOOTSOUND_PREF);
+	mEnableBootSoundPref = (CheckBoxPreference) prefSet.findPreference(ENABLE_BOOTSOUND_PREF);
         String enableBootsound = SystemProperties.get(ENABLE_BOOTSOUND_PERSIST_PROP, ENABLE_BOOTSOUND_DEFAULT);
         Boolean playSound = enableBootSound.equals("1");
         mEnableBootSoundPref.setChecked(playSound);
@@ -263,9 +263,9 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
             return true;
         }
 
-	if (preference == mEnableBootsoundPref) {
+	if (preference == mEnableBootSoundPref) {
             SystemProperties.set(ENABLE_BOOTSOUND_PERSIST_PROP,
-                    mEnableBootsoundPref.isChecked() ? "1" : "0");
+                    mEnableBootSoundPref.isChecked() ? "1" : "0");
             return true;
         }
 
