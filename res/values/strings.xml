@@ -423,6 +423,8 @@
     <string name="recent_apps_num_title">Number of recent apps</string>
     <string name="recent_apps_num_summary">Number of recent apps to display on long press home</string>
     <string name="dialog_recent_apps_num_title">Specify number of recent apps</string>
+    <string name="use_quick_recent_title">Quick home button</string>
+    <string name="use_quick_recent_summary">Show recent apps without waiting for a long press</string>
     <string name="use_custom_app_title">Use custom application</string>
     <string name="use_custom_app_summary">Use custom application instead of the recent applications dialog</string>
     <string name="select_custom_app_title">Select custom application</string>
@@ -513,8 +515,9 @@
     <string name="pref_disable_bootanimation_summary">Don\'t show the boot animation for faster boot</string>
 
     <!-- Performance : Disable bootsound -->
-    <string name="pref_disable_bootsound_title">Enable boot sound</string>
-    <string name="pref_disable_bootsound_summary">play the boot sound</string>
+    <string name="pref_enable_bootsound_title">Enable/disable boot sound</string>
+    <string name="pref_enable_bootsound_play_summary">play the boot sound</string>
+    <string name="pref_enable_bootsound_not_summary">Don\'t play the boot sound</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Lock home in memory</string>
@@ -629,8 +632,13 @@
     <string name="title_button_modes">Button modes</string>
     <string name="pref_brightness_mode_title">Brightness modes</string>
     <string name="pref_brightness_mode_summary">Choose how the brightness button changes modes</string>
-    <string name="cm_brightness_mode_auto">Auto</string>
     <string name="cm_brightness_mode_dim">Dim</string>
+    <string name="cm_brightness_mode_100">100%</string>
+    <string name="cm_brightness_mode_75">75%</string>
+    <string name="cm_brightness_mode_50">50%</string>
+    <string name="cm_brightness_mode_40">40%</string>
+    <string name="cm_brightness_mode_25">25%</string>
+    <string name="cm_brightness_mode_15">15%</string>
     <string name="pref_network_mode_title">Network modes</string>
     <string name="pref_network_mode_summary">Choose how the NetworkMode button changes modes</string>
     <string name="pref_screentimeout_mode_title">Screentimeout modes</string>

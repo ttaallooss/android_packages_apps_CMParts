@@ -91,11 +91,11 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final String DISABLE_BOOTANIMATION_DEFAULT = "0";
 
-    private static final String DISABLE_BOOTSOUND_PREF = "pref_disable_bootsound";
+    private static final String ENABLE_BOOTSOUND_PREF = "pref_enable_bootsound";
 
-    private static final String DISABLE_BOOTSOUND_PERSIST_PROP = "persist.sys.nobootsound";
+    private static final String ENABLE_BOOTSOUND_PERSIST_PROP = "persist.sys.nobootsound";
 
-    private static final String DISABLE_BOOTSOUND_DEFAULT = "0";
+    private static final String ENABLE_BOOTSOUND_DEFAULT = "0";
 
     private static final String LOCK_HOME_PREF = "pref_lock_home";
 
@@ -127,7 +127,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private CheckBoxPreference mDisableBootanimPref;
 
-    private CheckBoxPreference mDisableBootsoundPref;
+    private CheckBoxPreference mEnableBootsoundPref;
 
     private CheckBoxPreference mLockHomePref;
 
@@ -194,9 +194,15 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         String disableBootanimation = SystemProperties.get(DISABLE_BOOTANIMATION_PERSIST_PROP, DISABLE_BOOTANIMATION_DEFAULT);
         mDisableBootanimPref.setChecked("1".equals(disableBootanimation));
 
-	mDisableBootsoundPref = (CheckBoxPreference) prefSet.findPreference(DISABLE_BOOTSOUND_PREF);
-        String disableBootsound = SystemProperties.get(DISABLE_BOOTSOUND_PERSIST_PROP, DISABLE_BOOTSOUND_DEFAULT);
-        mDisableBootsoundPref.setChecked("1".equals(disableBootsound));
+	mEnableBootsoundPref = (CheckBoxPreference) prefSet.findPreference(ENABLE_BOOTSOUND_PREF);
+        String enableBootsound = SystemProperties.get(ENABLE_BOOTSOUND_PERSIST_PROP, ENABLE_BOOTSOUND_DEFAULT);
+        Boolean playSound = enableBootSound.equals("1");
+        mEnableBootSoundPref.setChecked(playSound);
+        if (playSound) {
+            mEnableBootSoundPref.setSummary(R.string.pref_enable_bootsound_play_summary);
+        } else {
+            mEnableBootSoundPref.setSummary(R.string.pref_enable_bootsound_not_summary);
+        }
 
         mLockHomePref = (CheckBoxPreference) prefSet.findPreference(LOCK_HOME_PREF);
         mLockHomePref.setChecked(Settings.System.getInt(getContentResolver(),
@@ -257,9 +263,9 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
             return true;
         }
 
-	if (preference == mDisableBootsoundPref) {
-            SystemProperties.set(DISABLE_BOOTSOUND_PERSIST_PROP,
-                    mDisableBootsoundPref.isChecked() ? "1" : "0");
+	if (preference == mEnableBootsoundPref) {
+            SystemProperties.set(ENABLE_BOOTSOUND_PERSIST_PROP,
+                    mEnableBootsoundPref.isChecked() ? "1" : "0");
             return true;
         }
 
