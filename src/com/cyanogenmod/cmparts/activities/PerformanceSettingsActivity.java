@@ -105,14 +105,6 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final int LOCK_MMS_DEFAULT = 0;
 
-    private static final String WIFI_SCAN_PREF = "pref_wifi_scan_interval";
-
-    private static final String WIFI_SCAN_PROP = "wifi.supplicant_scan_interval";
-	
-    private static final String WIFI_SCAN_PERSIST_PROP = "persist.wifi_scan_interval";
-	
-    private static final String WIFI_SCAN_DEFAULT = "30";
-
     private ListPreference mCompcachePref;
 
     private CheckBoxPreference mJitPref;
@@ -134,8 +126,6 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     private CheckBoxPreference mLockMmsPref;
 
     private ListPreference mHeapsizePref;
-
-    private ListPreference mWifiScanPref;
 
     private AlertDialog alertDialog;
 
@@ -211,11 +201,6 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mLockMmsPref = (CheckBoxPreference) prefSet.findPreference(LOCK_MMS_PREF);
         mLockMmsPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCK_MMS_IN_MEMORY, LOCK_MMS_DEFAULT) == 1);
-
-        mWifiScanPref = (ListPreference) prefSet.findPreference(WIFI_SCAN_PREF);
-        mWifiScanPref.setValue(SystemProperties.get(WIFI_SCAN_PERSIST_PROP,
-                SystemProperties.get(WIFI_SCAN_PROP, WIFI_SCAN_DEFAULT)));
-        mWifiScanPref.setOnPreferenceChangeListener(this);
 
         // Set up the warning
         alertDialog = new AlertDialog.Builder(this).create();
@@ -304,13 +289,6 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
                 SystemProperties.set(COMPCACHE_PERSIST_PROP, (String)newValue);
                 return true;
 	    }
-        }
-
-        if (preference == mWifiScanPref) {
-            if (newValue != null) {
-                SystemProperties.set(WIFI_SCAN_PERSIST_PROP, (String)newValue);
-                return true;
-            }
         }
 
         return false;
