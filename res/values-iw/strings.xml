@@ -71,20 +71,20 @@
   <string name="color_trackball_custom_summary">צבע מותאם אישית לפלאש</string>
   <string name="color_trackball_blink_title">קצב הבהוב</string>
   <string name="color_trackball_blink_summary">קצב הבהוב</string>
-  <string name="color_trackball_test_title">Flash test</string>
-  <string name="color_trackball_test_summary">Flash test</string>
+  <string name="color_trackball_test_title">בדיקת פלאש</string>
+  <string name="color_trackball_test_summary">בדיקת פלאש</string>
   <string name="dialog_clear_flash">נקה פלאש</string>
   <string name="trackball_advanced_title">הגדרות מתקדמות</string>
   <string name="pref_trackball_screen_title">הבהב תמיד</string>
   <string name="pref_trackball_screen_summary">נורית הההתראות תהבהב כאשר המסך דלוק</string>
   <string name="pref_trackball_blend_title">מיזוג התראות</string>
-  <string name="pref_trackball_blend_summary">Blend notification colors. Overrides succession.</string>
+  <string name="pref_trackball_blend_summary">מזג צבע התראות. Overrides succession.</string>
   <string name="pref_trackball_sucess_title">המשכיות</string>
   <string name="pref_trackball_sucess_summary">הבהוב התראות ברצף.</string>
   <string name="pref_trackball_random_title">צבעים אקראיים</string>
   <string name="pref_trackball_random_summary">הבהובים בצבעים אקראיים של נורית ההתראות עבור כל ההתראות</string>
-  <string name="pref_trackball_order_title">Pulse in order</string>
-  <string name="pref_trackball_order_summary">Pulses the LED color in order</string>
+  <string name="pref_trackball_order_title">הבהב ברצף</string>
+  <string name="pref_trackball_order_summary">הבהב את צבעי הלד ברצף</string>
   <string name="pref_trackball_reset_title">אתחול</string>
   <string name="pref_trackball_reset_summary">איפוס צבעים וכל יישומים</string>
   <string name="dialog_trackball_loading">טוען...</string>
@@ -108,7 +108,7 @@
     <string name="trackball_color_entry_blue">כחול</string>
     <string name="trackball_color_entry_yellow">צהוב</string>
     <string name="trackball_color_entry_cyan">טורקיז</string>
-    <string name="trackball_color_entry_magenta">מג\'נטה</string>
+    <string name="trackball_color_entry_magenta">מג'נט\ה</string>
     <string name="trackball_color_entry_pink">ורוד</string>
     <string name="trackball_color_entry_orange">כתום</string>
     <string name="trackball_color_entry_light_blue">תכלת</string>
@@ -163,7 +163,7 @@
     <string name="pref_jit_mode_summary">השתמש בקומפיילר דאלויק תרגום בזמן ריצה (דורש אתחול)</string>
 
     <!-- Performance Settings : Dithering -->
-  <string name="pref_use_dithering_title">Enable surface dithering</string>
+  <string name="pref_use_dithering_title">אפשר מיזוג משטחים</string>
   <string name="pref_use_dithering_summary">מיזוג משטחים משפר את איכות התמונה על חשבון ביצועים (דורש אתחול)</string>
 
     <!-- Performance Settings : VM Heap Size -->
@@ -179,7 +179,7 @@
   <string name="pref_lock_mms_summary">הימנע מאיבוד הודעות במצבי זיכרון נמוך</string>
 
     <!-- Performance Settings : Warning dialog -->
-    <string name="performance_settings_warning_title">WARNING: Dragons Ahead!</string>
+    <string name="performance_settings_warning_title">זהירות: דרקונים לפניך!</string>
   <string name="performance_settings_warning">האפשרויות כאן ישנו את ביצועי המערכת שלך, ואולי אפילו לרעה. הן נכללו כאן למטרות התנסות ואנחנו מבקשים שלא תגישו דיווחי באגים אם תשנו אחת מהגדרות ברירת המחדל.</string>
  
  <!-- Application Settings -->
@@ -200,13 +200,13 @@
   <string name="summary_on_haptic_feedback">השתמש במשוב רטט בעת הקלדה</string>
   <string name="summary_off_haptic_feedback">ללא משוב רטט בעת הקלדה</string>
   <string name="title_haptic_feedback_up">משוב רטט up</string>
-  <string name="summary_on_haptic_feedback_up">Use haptic feedback on key release for softkeys and certain UI interactions</string>
-  <string name="summary_off_haptic_feedback_up">No haptic feedback on key release for softkeys and certain UI interactions</string>
+  <string name="summary_on_haptic_feedback_up">השתמש במשוב רטט בעת שחרור מקשי softkeys</string>
+  <string name="summary_off_haptic_feedback_up">אל תשתמש במשוב רטט בעת שחרור מקשי softkeys</string>
   <string name="title_haptic_feedback_all">משוב רטט לפריטים שבמסך</string>
   <string name="summary_on_haptic_feedback_all">השתמש במשוב רטט בעת בחירת פריטים במסך</string>
   <string name="summary_off_haptic_feedback_all">ללא משוב רטט בעת בחירת פריטים במסך</string>
   <string name="title_haptic_down_decider">הגדר משוב רטט למטה</string>
-  <string name="title_haptic_up_decider">Set Up Pattern</string>
+  <string name="title_haptic_up_decider">הגדר דפוס</string>
   <string name="title_haptic_long_decider">הגדר משוב רטט לחיצה ארוכה</string>
   <string name="title_haptic_tap_decider">הגדרת משוב רטט בהקשה בלוח מקשים</string>
   <string name="title_haptic_menu">התאם משוב רטט</string>
@@ -237,15 +237,15 @@
     <string name="pref_power_prompt_summary">Change whether there is a prompt after choosing shutdown or reboot</string>
 
     <!-- UI Settings : Render effect -->
-   <string name="pref_render_effect_title">Render effect</string>
+   <string name="pref_render_effect_title">אפקט רינדור</string>
   <string name="pref_render_effect_summary">שינוי הצבעים המשמשים כדי לצייר את המסך (חיסכון פוטנציאלי בסוללה )</string>
 
     <string name="widget_name">RenderFX Widget</string>
     <string name="renderfx_temp">RenderFX</string>
-    <string name="prefs_render_effect">Render Effect</string>
-    <string name="notify_render_effect">Render effect on</string>
-    <string name="add_widget">Add widget</string>
-    <string name="pref_render_effect_none">No render effect</string>
+    <string name="prefs_render_effect">אפקט רינדור</string>
+    <string name="notify_render_effect">אפקט רינדור פועל</string>
+    <string name="add_widget">הוסף  וידג'ט</string>
+    <string name="pref_render_effect_none">ללא אפקט רינדור</string>
     <string name="pref_render_effect_night">מצב לילה (3700K)</string>
     <string name="pref_render_effect_green">טרמינל (ירוק)</string>
     <string name="pref_render_effect_blue">כחול</string>
@@ -273,8 +273,8 @@
   
     <!-- Expanded View Power Widget -->
   <string name="title_widget_buttons">יישומון צפייה מורחבת</string>
-  <string name="title_expanded_widget">Notification power widget</string>
-  <string name="summary_expanded_widget">Use the expanded views power widget</string>
+  <string name="title_expanded_widget">יישומי שליטה באזור ההתראות</string>
+  <string name="summary_expanded_widget">השתמש בתצוגה מורחבת ליישומי אזור ההתראות</string>
   <string name="title_expanded_hide_onchange">הסתר שינויים</string>
   <string name="summary_expanded_hide_onchange">הסתר את חלון ההתראות שנפתח ללמטה אחרי החלפת מצב כפתור היישומון</string>
   <string name="expanded_color_mask">צבע המחוון</string>
@@ -294,7 +294,7 @@
   <string name="title_toggle_autorotate">החלף מצב אוריינטציה</string>
   <string name="title_toggle_airplane">החלף מצב טיסה</string>
   <string name="title_toggle_flashlight">החלף מצב נורית הבזק</string>
-  <string name="title_toggle_sleep">Go to sleep</string>
+  <string name="title_toggle_sleep">לך לישון</string>
   <string name="title_button_modes">מצבי לחצן</string>
   <string name="pref_brightness_mode_title">מצבי בהירות</string>
   <string name="pref_brightness_mode_summary">בחר כיצד כפתור הבהירות משנה מצבים</string>
